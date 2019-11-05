@@ -1,0 +1,16 @@
+<%= form_for(@restaurant) do |f| %>
+  <div class="form-control">
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  </div>
+  <div class="form-control">
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  </div>
+  <div class="form-control">
+  <%= f.label :stars %>
+  <%= f.text_field :stars %>
+  </div>
+
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
